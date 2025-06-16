@@ -1,3 +1,4 @@
+// I Use this for Copying Bone Name for capturemirror SOP
 // Initialize string array
 string bone_names[];
 
