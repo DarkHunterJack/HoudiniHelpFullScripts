@@ -1,0 +1,12 @@
+// Initialize string array
+string bone_names[];
+
+// Loop over all points in the skeleton
+int npts = npoints(0);
+for (int i = 0; i < npts; i++) {
+    string name = point(0, "name", i);
+    append(bone_names, name);
+}
+
+// Store it as a detail attribute (array of strings)
+setdetailattrib(0, "bone_names", bone_names, "set");
